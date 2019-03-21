@@ -18,8 +18,14 @@ class ViewController: UIViewController {
         label.text = String(count)
     }
     @IBAction func but(_ sender: Any) {
+        if count != 9 {
         count = count + 1
         label.text = String(count)
+        } else
+        {
+            count = 0;
+            label.text = String(count)
+        }
     }
 }
 
